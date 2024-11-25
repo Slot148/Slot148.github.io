@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapas</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <header>
+        <h1 style="padding: 0 19px;" aria-label="S.P">SP</h1>
+        <h1 style="text-align: center;" aria-label="E.M.T.U">EMTU</h1>
+        <h4 style="padding: 0 20px;" aria-label="menu">MENU</h4>
+    </header>
+    <div style="justify-content: center; display: flex; flex-direction: column; padding: 10px 15px;">
+        <div style="display: flex; height: 200px;">
+            <button class="next" aria-label="anterior"><</button>
+            <div style="width: 100%;"></div>
+            <button class="next" aria-label="próximo">></button>
+        </div>
+
+        <div id="search">
+            <input type="text" name="searchBar" id="searchBar" placeholder="O que você procura?" aria-label="barra de pesquisa">
+            <button aria-label="pesquisar">o</button>
+        </div>
+
+        <div class="pai">
+            <div class="child" aria-label="informações sobre o passe escolar">
+                <h6>Passe<br>Escolar</h6>
+            </div>
+            <div class="child" aria-label="informações para passageiros com condições especiais">
+                <h6>Passageiro<br>Especial</h6>
+            </div>
+            <div class="child" aria-label="informações para passageiros idosos">
+                <h6>Passageiro<br>Idoso</h6>
+            </div>
+            <div class="child" aria-label="informações sobre o vale transporte">
+                <h6>Vale<br>Transporte</h6>
+            </div>
+        </div>
+    </div>
+
+    <div style="display: flex; flex-direction: column; padding: 10px 10px;">
+        <div style="display: flex; flex-direction: row;">
+            <div style="display: flex; width: 100%; flex-wrap: wrap;">
+                <select name="linha" id="imageSelector" onchange="changeImage()" style="height: 25px; justify-self: right; width: 30%;">
+                    <option value="https://www.google.com/maps/d/u/0/embed?mid=1T5g7Uz8AfBe5P65qFLAo5pEMC34Ti-0&ehbc=2E312F&noprof=1">Mapa Geral</option>
+                    <option value="https://www.google.com/maps/d/u/0/embed?mid=1PZILqKtMajunvivzJJoj-GcW1jUlsZA&ehbc=2E312F&noprof=1">São José dos Campos -> Monteiro</option>
+                    <option value="https://www.google.com/maps/d/u/0/embed?mid=1pOhOVwGPF1WDpILlDFnwEadiWy3g7p8&ehbc=2E312F&noprof=1">São José dos Cmapos -> Jacareí</option>
+                    <option value="https://www.google.com/maps/d/u/0/embed?mid=1jB3haX1bAqRLw7oQUpLCoqKKpNv3xfU&ehbc=2E312F&noprof=1">São José dos Campos -> Lorena</option>
+                    <option value="https://www.google.com/maps/d/u/0/embed?mid=1uhUac0HpekgEogGa66wmJ_9OBGYU1dw&ehbc=2E312F&noprof=1">São José dos Campos -> Caçapava</option>
+                </select>
+
+                <!--Iframe do mapa corrigido-->
+                <div style="overflow: hidden; position: relative; width: 100%; height: 500px;">
+                    <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1T5g7Uz8AfBe5P65qFLAo5pEMC34Ti-0&ehbc=2E312F&noprof=1" 
+                        id="displayImage" 
+                        style="border: 0; position: relative; top: -50px; left: 0; width: 100%; height: 600px;">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div style="display: flex; flex-direction: column; padding: 10px 15px; justify-content: center; text-align: center;">
+        <h3>Pontos e Horários</h3>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Número da linha</th>
+                    <th>Nome da linha</th>
+                    <th>Horários</th>
+                    <th>Parada</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>[...]</td>
+                    <td>[...]</td>
+                    <td>[...]</td>
+                    <td>[...]</td>
+                </tr>
+                <tr>
+                    <td>[...]</td>
+                    <td>[...]</td>
+                    <td>[...]</td>
+                    <td>[...]</td>
+                </tr>
+                <!-- Continue com as linhas restantes -->
+            </tbody>
+        </table>
+    </div>
+
+    <footer>
+        <div style="display: flex; justify-content: space-evenly;">
+            <button class="footerbtn"></button>
+            <button class="footerbtn"></button>
+            <button class="footerbtn"></button>
+        </div>
+        <div style="height: 30px;">
+            <div style="height: 30px; justify-content: right; display: flex; padding-right: 20px;">
+                <button class="footerbtn" style="background-color: red; height: 20px; width: 100px;"></button>
+            </div>
+        </div>
+
+        <div style="background-color: rgb(37, 37, 86); height: 170px;">
+            <div style="border: 1px solid white; height: 40px;"></div>
+        </div>
+    </footer>
+
+    <script>
+        function changeImage() {
+            const selector = document.getElementById('imageSelector');
+            const image = document.getElementById('displayImage');
+            image.src = selector.value;
+        }
+    </script>
+</body>
+
+</html>
