@@ -115,8 +115,31 @@
             const selector = document.getElementById('imageSelector');
             const image = document.getElementById('displayImage');
             image.src = selector.value;
+    
+            // Atualiza a URL com o valor selecionado
+            const url = new URL(window.location);
+            url.searchParams.set('map', selector.value);  // Adiciona/atualiza o parâmetro "map"
+            window.history.pushState({}, '', url);  // Atualiza a URL sem recarregar a página
         }
+    
+        // Função para carregar a configuração inicial a partir da URL
+        function loadMapFromURL() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const mapParam = urlParams.get('map');
+            
+            if (mapParam) {
+                const selector = document.getElementById('imageSelector');
+                selector.value = mapParam;
+                const image = document.getElementById('displayImage');
+                image.src = mapParam;  // Carrega o mapa selecionado da URL
+            }
+        }
+    
+        // Carregar o mapa ao carregar a página
+        window.onload = loadMapFromURL;
     </script>
+    
+
 </body>
 
 </html>
