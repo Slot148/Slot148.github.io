@@ -6,6 +6,7 @@ body, html{
 *{
     border: 1px solid black;
     margin: 1px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .child{
@@ -76,7 +77,8 @@ h6{
     width: 25%;
     height: 40%;
     padding: 15px;
-    margin: 10px 0;    
+    margin: 10px 0;
+        
 
 }
 
