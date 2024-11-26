@@ -54,6 +54,8 @@ h6{
 .next{
     background-color: transparent;
     color: transparent;
+    font-size: 30px;
+    font-weight: bolder;
 }
 
 .next:hover{

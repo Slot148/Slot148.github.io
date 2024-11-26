@@ -11,128 +11,187 @@
 
 <body>
     <header>
-        <header>
-            <div style="height: 200%; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap;" aria-label="Logo de São Paulo">
-                <img src="..\Assets\baixados.jpg" alt="logo do estado de São Paulo" class="Logo" style="width: 30%;">
-            </div>
-            <div style="display: flex; justify-content: center;" aria-label="E.M.T.U"><img style="border: none; margin: 10px;" src="..\Assets\emtu-logo.png" alt="logo da E.M.T.U" class="Logo"></div>
-            <div style="display: flex; flex-direction: row; align-items: center; padding: 0; justify-content: space-between;"><h4 style="border: none; margin: 0 0 0 10px;" aria-label="menu">MENU</h4><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 512 512"><path fill="none" stroke="#523333" stroke-linecap="round" stroke-miterlimit="10" stroke-width="48" d="M88 152h336M88 256h336M88 360h336"/></svg></div>
+        <div style="height: 200%; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap;"
+            aria-label="Logo de São Paulo">
+            <img src="..\Assets\baixados.jpg" alt="logo do estado de São Paulo" class="Logo" style="width: 30%;">
         </div>
-        </header>
-        <div style="justify-content: center; display: flex; flex-direction: column; padding: 10px 15px;">
-            
-            <div style="display: flex; height: 200px;">
-                <button class="next" aria-label="anterior"><</button>
-                <div style="width: 100%;"></div>
-                <button class="next" aria-label="próximo">></button>
-            </div>
-    
-            <div id="search" style="display: flex; justify-content: center; border: none; background-color: rgb(0, 97, 165); border-radius: 5px 5px 0 0 ; margin: 5px 0 -1px 0; padding: 5px;"><input type="text" name="searchBar" id="searchBar" placeholder="Buscar por..." aria-label="barra de pesquisa" style="height: 35px; border-radius: 10px 0 0 10px; margin: 2px; border: none; outline: none; padding: 2px 15px; font-size: 20px; margin-right: -1px;"><button style="border: none; height: 39px; width: 40px; border-radius: 0 10px 10px 0; margin: 0; align-items: center; justify-content: center; padding: 2px; display: flex;" aria-label="pesquisar"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="m21 21l-4.343-4.343m0 0A8 8 0 1 0 5.343 5.343a8 8 0 0 0 11.314 11.314"/></svg></button></div>
-    
-            <div class="pai">
-                    <div class="child" aria-label="informações sobre o passe escolar"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"><path fill="white" d="M20.82 4.465a5.06 5.06 0 0 0-3.51-1.43H6.75a4.93 4.93 0 0 0-5 4.91v8.11a4.9 4.9 0 0 0 1.46 3.47a5 5 0 0 0 3.51 1.44h10.56a5 5 0 0 0 3.51-1.44a4.83 4.83 0 0 0 1.46-3.47v-8.11a4.87 4.87 0 0 0-1.43-3.48m-9.16 12.25a.75.75 0 0 1-.75-.75a2.3 2.3 0 0 0-.68-1.63a2.43 2.43 0 0 0-3.3 0a2.28 2.28 0 0 0-.68 1.63a.75.75 0 0 1-1.5 0a3.8 3.8 0 0 1 1.12-2.7a3.9 3.9 0 0 1 1.2-.85a2.77 2.77 0 0 1-1.32-2.37a2.8 2.8 0 1 1 5.6 0a2.77 2.77 0 0 1-1.28 2.37c.457.19.875.465 1.23.81a3.88 3.88 0 0 1 1.12 2.7a.74.74 0 0 1-.76.79m6.53-.88H14.6a.75.75 0 0 1 0-1.5h3.59a.75.75 0 1 1 0 1.5m-4.34-3.84a.75.75 0 0 1 .75-.75h1.54a.75.75 0 1 1 0 1.5H14.6a.74.74 0 0 1-.75-.75m4.34-2.33H14.6a.75.75 0 0 1 0-1.5h3.59a.75.75 0 0 1 0 1.5"/><path fill="white" d="M8.58 11.385a1.3 1.3 0 1 0 0-2.6a1.3 1.3 0 0 0 0 2.6"/></svg><h6>Passe<br>Escolar</h6></div>
-                    <div class="child" aria-label="informações para passageiros com condições especiais"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"><path fill="none" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 3v9h7l2 6h2m-6-9H9a6 6 0 1 0 6 6M11 4a1 1 0 1 0 0-2a1 1 0 0 0 0 2"/></svg><h6>Passageiro<br>Especial</h6></div>
-                    <div class="child" aria-label="informações para passageiros idosos"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"><path fill="white" d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5s-3 1.34-3 3s1.34 3 3 3m-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5S5 6.34 5 8s1.34 3 3 3m0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5m8 0c-.29 0-.62.02-.97.05c1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5"/></svg><h6>Passageiro <br>Idoso</h6></div>
-                    <div class="child" aria-label="informações sobre o vale transporte"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"><path fill="white" d="M18 11H6V6h12m-1.5 11a1.5 1.5 0 0 1-1.5-1.5a1.5 1.5 0 0 1 1.5-1.5a1.5 1.5 0 0 1 1.5 1.5a1.5 1.5 0 0 1-1.5 1.5m-9 0A1.5 1.5 0 0 1 6 15.5A1.5 1.5 0 0 1 7.5 14A1.5 1.5 0 0 1 9 15.5A1.5 1.5 0 0 1 7.5 17M4 16c0 .88.39 1.67 1 2.22V20a1 1 0 0 0 1 1h1a1 1 0 0 0 1-1v-1h8v1a1 1 0 0 0 1 1h1a1 1 0 0 0 1-1v-1.78c.61-.55 1-1.34 1-2.22V6c0-3.5-3.58-4-8-4s-8 .5-8 4z"/></svg><h6>Vale<br>Transporte</h6></div>
-            </div>
-        
-    <div style="display: flex; flex-direction: column; padding: 10px 10px;">
-        <div style="display: flex; flex-direction: row;">
-            <div style="display: flex; width: 100%; flex-wrap: wrap;">
-                <select name="linha" id="imageSelector" onchange="changeImage()" style="height: 25px; justify-self: right; width: 30%;">
-                    <option value="https://www.google.com/maps/d/u/0/embed?mid=1T5g7Uz8AfBe5P65qFLAo5pEMC34Ti-0&ehbc=2E312F&noprof=1">Mapa Geral</option>
-                    <option value="https://www.google.com/maps/d/u/0/embed?mid=1PZILqKtMajunvivzJJoj-GcW1jUlsZA&ehbc=2E312F&noprof=1">São José dos Campos -> Monteiro</option>
-                    <option value="https://www.google.com/maps/d/u/0/embed?mid=1pOhOVwGPF1WDpILlDFnwEadiWy3g7p8&ehbc=2E312F&noprof=1">São José dos Cmapos -> Jacareí</option>
-                    <option value="https://www.google.com/maps/d/u/0/embed?mid=1jB3haX1bAqRLw7oQUpLCoqKKpNv3xfU&ehbc=2E312F&noprof=1">São José dos Campos -> Lorena</option>
-                    <option value="https://www.google.com/maps/d/u/0/embed?mid=1uhUac0HpekgEogGa66wmJ_9OBGYU1dw&ehbc=2E312F&noprof=1">São José dos Campos -> Caçapava</option>
-                </select>
+        <div style="display: flex; justify-content: center;" aria-label="E.M.T.U"><img
+                style="border: none; margin: 10px;" src="..\Assets\emtu-logo.png" alt="logo da E.M.T.U" class="Logo">
+        </div>
+        <div
+            style="display: flex; flex-direction: row; align-items: center; padding: 0; justify-content: space-between;">
+            <h4 style="border: none; margin: 0 0 0 10px;" aria-label="menu">MENU</h4><svg
+                xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 512 512">
+                <path fill="none" stroke="#523333" stroke-linecap="round" stroke-miterlimit="10" stroke-width="48"
+                    d="M88 152h336M88 256h336M88 360h336" />
+            </svg>
+        </div>
+        </div>
+    </header>
+    <div style="justify-content: center; display: flex; flex-direction: column; padding: 10px 15px;">
 
-                <!--Iframe do mapa corrigido-->
-                <div style="overflow: hidden; position: relative; width: 100%; height: 500px;">
-                    <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1T5g7Uz8AfBe5P65qFLAo5pEMC34Ti-0&ehbc=2E312F&noprof=1" 
-                        id="displayImage" 
-                        style="border: 0; position: relative; top: -50px; left: 0; width: 100%; height: 600px;">
-                    </iframe>
+        <div style="display: flex; height: 200px;">
+            <button class="next" aria-label="anterior">&lt;</button>
+            <div style="width: 100%;"></div>
+            <button class="next" aria-label="próximo">&gt;</button>
+        </div>
+
+        <div id="search"
+            style="display: flex; justify-content: center; border: none; background-color: rgb(0, 97, 165); border-radius: 5px 5px 0 0 ; margin: 5px 0 -1px 0; padding: 5px;">
+            <input type="text" name="searchBar" id="searchBar" placeholder="Buscar por..."
+                aria-label="barra de pesquisa"
+                style="height: 35px; border-radius: 10px 0 0 10px; margin: 2px; border: none; outline: none; padding: 2px 15px; font-size: 20px; margin-right: -1px;"><button
+                style="border: none; height: 39px; width: 40px; border-radius: 0 10px 10px 0; margin: 0; align-items: center; justify-content: center; padding: 2px; display: flex;"
+                aria-label="pesquisar"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                    viewBox="0 0 24 24">
+                    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="2.5" d="m21 21l-4.343-4.343m0 0A8 8 0 1 0 5.343 5.343a8 8 0 0 0 11.314 11.314" />
+                </svg></button>
+        </div>
+
+        <div class="pai">
+            <div class="child" aria-label="informações sobre o passe escolar"><svg xmlns="http://www.w3.org/2000/svg"
+                    width="48" height="48" viewBox="0 0 24 24">
+                    <path fill="white"
+                        d="M20.82 4.465a5.06 5.06 0 0 0-3.51-1.43H6.75a4.93 4.93 0 0 0-5 4.91v8.11a4.9 4.9 0 0 0 1.46 3.47a5 5 0 0 0 3.51 1.44h10.56a5 5 0 0 0 3.51-1.44a4.83 4.83 0 0 0 1.46-3.47v-8.11a4.87 4.87 0 0 0-1.43-3.48m-9.16 12.25a.75.75 0 0 1-.75-.75a2.3 2.3 0 0 0-.68-1.63a2.43 2.43 0 0 0-3.3 0a2.28 2.28 0 0 0-.68 1.63a.75.75 0 0 1-1.5 0a3.8 3.8 0 0 1 1.12-2.7a3.9 3.9 0 0 1 1.2-.85a2.77 2.77 0 0 1-1.32-2.37a2.8 2.8 0 1 1 5.6 0a2.77 2.77 0 0 1-1.28 2.37c.457.19.875.465 1.23.81a3.88 3.88 0 0 1 1.12 2.7a.74.74 0 0 1-.76.79m6.53-.88H14.6a.75.75 0 0 1 0-1.5h3.59a.75.75 0 1 1 0 1.5m-4.34-3.84a.75.75 0 0 1 .75-.75h1.54a.75.75 0 1 1 0 1.5H14.6a.74.74 0 0 1-.75-.75m4.34-2.33H14.6a.75.75 0 0 1 0-1.5h3.59a.75.75 0 0 1 0 1.5" />
+                    <path fill="white" d="M8.58 11.385a1.3 1.3 0 1 0 0-2.6a1.3 1.3 0 0 0 0 2.6" />
+                </svg>
+                <h6>Passe<br>Escolar</h6>
+            </div>
+            <div class="child" aria-label="informações para passageiros com condições especiais"><svg
+                    xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24">
+                    <path fill="none" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M10 3v9h7l2 6h2m-6-9H9a6 6 0 1 0 6 6M11 4a1 1 0 1 0 0-2a1 1 0 0 0 0 2" />
+                </svg>
+                <h6>Passageiro<br>Especial</h6>
+            </div>
+            <div class="child" aria-label="informações para passageiros idosos"><svg xmlns="http://www.w3.org/2000/svg"
+                    width="48" height="48" viewBox="0 0 24 24">
+                    <path fill="white"
+                        d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5s-3 1.34-3 3s1.34 3 3 3m-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5S5 6.34 5 8s1.34 3 3 3m0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5m8 0c-.29 0-.62.02-.97.05c1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5" />
+                </svg>
+                <h6>Passageiro <br>Idoso</h6>
+            </div>
+            <div class="child" aria-label="informações sobre o vale transporte"><svg xmlns="http://www.w3.org/2000/svg"
+                    width="48" height="48" viewBox="0 0 24 24">
+                    <path fill="white"
+                        d="M18 11H6V6h12m-1.5 11a1.5 1.5 0 0 1-1.5-1.5a1.5 1.5 0 0 1 1.5-1.5a1.5 1.5 0 0 1 1.5 1.5a1.5 1.5 0 0 1-1.5 1.5m-9 0A1.5 1.5 0 0 1 6 15.5A1.5 1.5 0 0 1 7.5 14A1.5 1.5 0 0 1 9 15.5A1.5 1.5 0 0 1 7.5 17M4 16c0 .88.39 1.67 1 2.22V20a1 1 0 0 0 1 1h1a1 1 0 0 0 1-1v-1h8v1a1 1 0 0 0 1 1h1a1 1 0 0 0 1-1v-1.78c.61-.55 1-1.34 1-2.22V6c0-3.5-3.58-4-8-4s-8 .5-8 4z" />
+                </svg>
+                <h6>Vale<br>Transporte</h6>
+            </div>
+        </div>
+
+        <div style="display: flex; flex-direction: column; padding: 10px 10px;">
+            <div style="display: flex; flex-direction: row;">
+                <div style="display: flex; width: 100%; flex-wrap: wrap;">
+                    <select name="linha" id="imageSelector" onchange="changeImage()"
+                        style="height: 25px; justify-self: right; width: 30%;">
+                        <option
+                            value="https://www.google.com/maps/d/u/0/embed?mid=1T5g7Uz8AfBe5P65qFLAo5pEMC34Ti-0&ehbc=2E312F&noprof=1">
+                            Mapa Geral</option>
+                        <option
+                            value="https://www.google.com/maps/d/u/0/embed?mid=1PZILqKtMajunvivzJJoj-GcW1jUlsZA&ehbc=2E312F&noprof=1">
+                            São José dos Campos -> Monteiro</option>
+                        <option
+                            value="https://www.google.com/maps/d/u/0/embed?mid=1pOhOVwGPF1WDpILlDFnwEadiWy3g7p8&ehbc=2E312F&noprof=1">
+                            São José dos Cmapos -> Jacareí</option>
+                        <option
+                            value="https://www.google.com/maps/d/u/0/embed?mid=1jB3haX1bAqRLw7oQUpLCoqKKpNv3xfU&ehbc=2E312F&noprof=1">
+                            São José dos Campos -> Lorena</option>
+                        <option
+                            value="https://www.google.com/maps/d/u/0/embed?mid=1uhUac0HpekgEogGa66wmJ_9OBGYU1dw&ehbc=2E312F&noprof=1">
+                            São José dos Campos -> Caçapava</option>
+                    </select>
+
+                    <!--Iframe do mapa corrigido-->
+                    <div style="overflow: hidden; position: relative; width: 100%; height: 500px;">
+                        <iframe
+                            src="https://www.google.com/maps/d/u/0/embed?mid=1T5g7Uz8AfBe5P65qFLAo5pEMC34Ti-0&ehbc=2E312F&noprof=1"
+                            id="displayImage"
+                            style="border: 0; position: relative; top: -50px; left: 0; width: 100%; height: 600px;">
+                        </iframe>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <div style="display: flex; flex-direction: column; padding: 10px 15px; justify-content: center; text-align: center;">
-        <h3>Pontos e Horários</h3>
-        <table border="1">
-            <thead>
-                <tr>
-                    <th>Número da linha</th>
-                    <th>Nome da linha</th>
-                    <th>Horários</th>
-                    <th>Parada</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>[...]</td>
-                    <td>[...]</td>
-                    <td>[...]</td>
-                    <td>[...]</td>
-                </tr>
-                <tr>
-                    <td>[...]</td>
-                    <td>[...]</td>
-                    <td>[...]</td>
-                    <td>[...]</td>
-                </tr>
-                <!-- Continue com as linhas restantes -->
-            </tbody>
-        </table>
-    </div>
-
-    <footer>
-        <div style="display: flex; justify-content: space-evenly;">
-            <button class="footerbtn"></button>
-            <button class="footerbtn"></button>
-            <button class="footerbtn"></button>
+        <div
+            style="display: flex; flex-direction: column; padding: 10px 15px; justify-content: center; text-align: center;">
+            <h3>Pontos e Horários</h3>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Número da linha</th>
+                        <th>Nome da linha</th>
+                        <th>Horários</th>
+                        <th>Parada</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>[...]</td>
+                        <td>[...]</td>
+                        <td>[...]</td>
+                        <td>[...]</td>
+                    </tr>
+                    <tr>
+                        <td>[...]</td>
+                        <td>[...]</td>
+                        <td>[...]</td>
+                        <td>[...]</td>
+                    </tr>
+                    <!-- Continue com as linhas restantes -->
+                </tbody>
+            </table>
         </div>
-        <div style="height: 30px;">
-            <div style="height: 30px; justify-content: right; display: flex; padding-right: 20px;">
-                <button class="footerbtn" style="background-color: red; height: 20px; width: 100px;"></button>
+
+        </div>
+
+        <footer>
+            <div style="height: 40px; justify-content: right; display: flex; background-color: red;">
+                
             </div>
-        </div>
 
-        <div style="background-color: rgb(37, 37, 86); height: 170px;">
-            <div style="border: 1px solid white; height: 40px;"></div>
-        </div>
-    </footer>
+            <div style="display: flex; justify-content: space-evenly; padding: 10px;">
+                <button class="footerbtn"></button>
+                <button class="footerbtn"></button>
+                <button class="footerbtn"></button>
+            </div>
 
-    <script>
-        function changeImage() {
-            const selector = document.getElementById('imageSelector');
-            const image = document.getElementById('displayImage');
-            image.src = selector.value;
-    
-            // Atualiza a URL com o valor selecionado
-            const url = new URL(window.location);
-            url.searchParams.set('map', selector.value);  // Adiciona/atualiza o parâmetro "map"
-            window.history.pushState({}, '', url);  // Atualiza a URL sem recarregar a página
-        }
-    
-        // Função para carregar a configuração inicial a partir da URL
-        function loadMapFromURL() {
-            const urlParams = new URLSearchParams(window.location.search);
-            const mapParam = urlParams.get('map');
-            
-            if (mapParam) {
+            <div style="background-color: rgb(37, 37, 86); height: 170px;">
+                <div style="border: 1px solid white; height: 40px;"></div>
+            </div>
+        </footer>
+        
+
+        <script>
+            function changeImage() {
                 const selector = document.getElementById('imageSelector');
-                selector.value = mapParam;
                 const image = document.getElementById('displayImage');
-                image.src = mapParam;  // Carrega o mapa selecionado da URL
+                image.src = selector.value;
+
+                // Atualiza a URL com o valor selecionado
+                const url = new URL(window.location);
+                url.searchParams.set('map', selector.value);  // Adiciona/atualiza o parâmetro "map"
+                window.history.pushState({}, '', url);  // Atualiza a URL sem recarregar a página
             }
-        }
-    
-        // Carregar o mapa ao carregar a página
-        window.onload = loadMapFromURL;
-    </script>
-    
+
+            // Função para carregar a configuração inicial a partir da URL
+            function loadMapFromURL() {
+                const urlParams = new URLSearchParams(window.location.search);
+                const mapParam = urlParams.get('map');
+
+                if (mapParam) {
+                    const selector = document.getElementById('imageSelector');
+                    selector.value = mapParam;
+                    const image = document.getElementById('displayImage');
+                    image.src = mapParam;  // Carrega o mapa selecionado da URL
+                }
+            }
+
+            // Carregar o mapa ao carregar a página
+            window.onload = loadMapFromURL;
+        </script>
 
 </body>
 
