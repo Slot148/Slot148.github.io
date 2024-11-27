@@ -1,11 +1,11 @@
 body, html{
     margin: 0;
     padding: 0;
+    margin-right: -1px;
+    overflow-x: hidden;
 }
 
 *{
-    border: 1px solid black;
-    margin: 1px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -55,13 +55,11 @@ h6{
 .next{
     background-color: transparent;
     color: transparent;
-    font-size: 30px;
-    font-weight: bolder;
-    
+    border: none
 }
 
 .next:hover{
-    background-color: rgba(0, 0, 0, 0.347);
+    background: linear-gradient(to top right, rgb(199, 210, 222), rgb(0, 97, 165));
     color: white;
 }
 
@@ -85,10 +83,20 @@ h6{
     border: none;
     border-radius: 10px;
     background-color: rgb(0, 97, 165);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    flex-wrap: wrap;
+}
+
+.cards p{
+    font-weight: bolder;
+    color: white;
 }
 
 .cards:hover{
-    background-color: rgba(0, 0, 0, 0.347)
+    background: linear-gradient(to top right, rgb(199, 210, 222), rgb(0, 97, 165));
 }
 
 .footerbtn{
@@ -99,10 +107,13 @@ h6{
     margin: 5px;
     color: white;
     font-size: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .footerbtn:hover{
-    background-color: rgba(37, 37, 86, 0.8);
+    background: linear-gradient(to top right, rgb(0, 97, 165), rgb(37, 37, 86));
     cursor: pointer;
 }
 
@@ -125,12 +136,22 @@ p{
     display: flex;
     flex-direction: row;
     margin: 5px 35px 5px 5px;
-    font-size: 12px;
+    font-size: 13px;
     font-weight: bolder;
-    color: #111;
+    color: #726161;
 }
 
 .footerText:hover{
     border: 2px solid red;
     cursor: pointer;
+}
+
+.footerimg{
+    margin-right: 145px;
+}
+
+@media (max-width: 768px) {
+    .cards svg{
+        display: none;   
+    }
 }
